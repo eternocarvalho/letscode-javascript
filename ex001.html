@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício de Fixação</title>
+</head>
+<body>
+    
+    <script>
+
+        //1 - Cálculo da Média
+
+        alert("Ex001 - Cálculo da Média");
+
+        let nota_1 = parseFloat(prompt("Insira a primeira nota: "));
+        let nota_2 = parseFloat(prompt("Insira a segunda nota: "));
+        let nota_3 = parseFloat(prompt("Insira a terceira nota: "));
+        let nota_4 = parseFloat(prompt("Insira a quarta nota: "));
+        let soma_notas = nota_1 + nota_2 + nota_3 + nota_4;
+        let media = soma_notas/4;
+        console.log("A média final é", media);
+
+
+        //2 - Calculando a área de um círculo
+
+        alert("Ex002 - Cálculo da área de um círculo");
+        let raio = parseFloat(prompt("Digite o raio do círculo."));
+        const pi = 3.141519265;
+        let area = pi*(raio**2);
+        console.log(area);
+
+
+        //3 - Converte a temperatura
+
+        alert("Ex003 - Converte a temperatura");
+        let temperatura_fahrenheit = parseFloat(prompt("Digite a temperatura em Fahrenheit"));
+        let temperatura_celsius = 5*((temperatura_fahrenheit-32)/9);
+        console.log(temperatura_celsius);
+
+
+        //4 - Calculando Área e Perímetro
+
+        alert("Ex004 - Calculando Área e Perímetro");
+        let base_retangulo = parseFloat(prompt("Digite o valor da base do retângulo"));
+        let altura_retangulo = parseFloat(prompt("Digite o valor da altura do retângulo"));
+        let area_retangulo = base_retangulo*altura_retangulo;
+        let perimetro_retangulo = (2*base_retangulo) + (2*altura_retangulo);
+        console.log(area_retangulo);
+        console.log(perimetro_retangulo);
+
+
+        //5 - Calculando Azulejos da Cozinha
+
+        alert("Ex005 - Azulejos da Cozinha");
+        let base_cozinha = parseFloat(prompt("Digite o valor da base do retângulo"));
+        let altura_cozinha = parseFloat(prompt("Digite o valor da altura do retângulo"));
+        let area_cozinha = base_cozinha*altura_cozinha;
+        let caixas_azulejos = area_cozinha/2.5;
+        console.log(caixas_azulejos);
+        
+    </script>
+
+
+</body>
+</html>
